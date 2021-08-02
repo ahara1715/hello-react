@@ -9,7 +9,7 @@ class Hello extends React.Component {
         };
         
         axios
-            .get("http://streaming.ntttd-ccs.com:8088/test/Hello")
+            .get("http://streaming.ntttd-ccs.com:8080/test/Hello")
             .then(res => this.setState({message: res.data.message}))
             .catch(err => alert(err));
     }
